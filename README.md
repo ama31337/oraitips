@@ -5,7 +5,7 @@
 ```sh
 cd $HOME && git clone -v https://github.com/ama31337/oraitips.git
 ```
- 2. Edit IS_JAILED script with your moniker (MONIKER='"YOUR_MONIKER"')
+ 2. Edit is_jailed.sh script with your moniker (MONIKER='"YOUR_MONIKER"')
 ```sh
 vim $HOME/oraitips/scripts/is_jailed.sh
 ```
