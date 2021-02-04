@@ -13,6 +13,10 @@ vim $HOME/oraitips/scripts/is_jailed.sh
 ```sh
 vim $HOME/oraitips/scripts/Send_msg_toTelBot.sh
 ```
+ 4. Make scripts execurable
+```sh
+chmod +x $HOME/oraitips/scripts/*.sh
+```
  5. Create cronjob to execute scripts every 5 minute:
 
  check your $HOME path to the correct one
