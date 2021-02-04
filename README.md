@@ -28,4 +28,4 @@ crontab -e
 */5 * * * *      cd $HOME/oraitips/scripts && ./check_sync.sh >> $HOME/oraitips/scripts/check_sync.log
 */5 * * * *      cd $HOME/oraitips/scripts && ./is_jailed.sh >> $HOME/oraitips/scripts/is_jailed.log
 ```
- Done! You've succesfully setup alerts to check your node healt.
+ Done! You've succesfully setup alerts to check your node health.
