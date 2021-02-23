@@ -29,6 +29,7 @@ sudo cp {.oraid/config/node_key.json,.oraid/config/priv_validator_key.json} ~/tr
 # download genesis and start node
 curl -L https://raw.githubusercontent.com/ama31337/oraitips/main/scripts/genesis.json > ~/genesis.json
 sudo cp ~/genesis.json ~/.oraid/config/genesis.json
+# sed -i 's/persistent_peers = ""/persistent_peers = "d549bdd442caadf557672f9b4efefdff80ee28e2@178.128.57.195:26656"/g' ~/.oraid/config/config.toml
 docker-compose restart orai && docker-compose exec -d orai bash -c 'oraivisor start --p2p.pex false --p2p.persistent_peers "d549bdd442caadf557672f9b4efefdff80ee28e2@178.128.57.195:26656"'
 
 echo "done"
