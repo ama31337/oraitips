@@ -23,7 +23,7 @@ docker-compose pull && docker-compose up -d --force-recreate
 # initiate node
 docker-compose exec orai bash -c 'wget -O /usr/bin/fn https://raw.githubusercontent.com/oraichain/oraichain-static-files/master/fn.sh && chmod +x /usr/bin/fn' && docker-compose exec orai fn init
 # backup node keys
-mkdir ~/trusted-bak
+mkdir -p ~/trusted-bak
 sudo cp {.oraid/config/node_key.json,.oraid/config/priv_validator_key.json} ~/trusted-bak
 
 # download genesis and start node
