@@ -13,7 +13,7 @@ cd $HOME/
 curl -OL https://raw.githubusercontent.com/oraichain/oraichain-static-files/master/mainnet-static-files/setup.sh && chmod +x ./setup.sh && ./setup.sh
 
 # edit orai.env
-sed -i 's/USER=test1/USER=lux8.net_node01/g' $HOME/orai.env
+sed -i 's/USER=test1/USER=lux8.net/g' $HOME/orai.env
 sed -i 's/MONIKER=test1_moniker/MONIKER=lux8.net/g' $HOME/orai.env
 sed -i 's%WEBSITE=xyx.com%WEBSITE="https://lux8.het"%g' $HOME/orai.env
 sed -i 's%DETAILS=helloworld%DETAILS="Fial Lux. Infinite Lux."%g' $HOME/orai.env
