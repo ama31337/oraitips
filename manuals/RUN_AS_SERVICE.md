@@ -25,6 +25,7 @@ orailogs
 ```
 ctrl+c for exit (node will continue work in background).
 
+### Manual update
  3. If you run a node via systemd, you need to check for new versions and update in manually. When you see in logs something like
 `
 UPGRADE "v0.3.1" NEEDED at height: 102952: http://128.199.70.52:8080/ipfs/QmSgXgV9in6uGyLMdvtPNQqTLgqGJMgJX5inTDAYyQk1UQ
