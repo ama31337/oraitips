@@ -30,10 +30,19 @@ ctrl+c for exit (node will continue work in background).
 UPGRADE "v0.3.1" NEEDED at height: 102952: http://128.199.70.52:8080/ipfs/QmSgXgV9in6uGyLMdvtPNQqTLgqGJMgJX5inTDAYyQk1UQ
 `
 you need to update oraid binary
- 4. Get oriad link
+ 4. To get new oriad link, copy url from logs and run
 ```sh
 curl -s http://128.199.70.52:8080/ipfs/QmSgXgV9in6uGyLMdvtPNQqTLgqGJMgJX5inTDAYyQk1UQ | jq
 ```
+In output you'll get new oraid binary link, like this one:
+`
+{
+  "binaries": {
+    "linux/amd64": "http://128.199.70.52:8080/ipfs/QmUxFkG8t3a2ogzZJbuBaDQXy5C3BJaQw2DRFXyhHir3rB"
+  }
+}
+`
+
  5. Make a backup of your previous binary to be able to run it in case of update failure.
 
 ```sh
