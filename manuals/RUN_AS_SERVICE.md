@@ -27,12 +27,12 @@ ctrl+c for exit (node will continue work in background).
 
  3. If you run a node via systemd, you need to check for new versions and update in manually. When you see in logs something like
 `
-test
+UPGRADE "v0.3.1" NEEDED at height: 102952: http://128.199.70.52:8080/ipfs/QmSgXgV9in6uGyLMdvtPNQqTLgqGJMgJX5inTDAYyQk1UQ
 `
-you need to run following command to update oraid binary
+you need to update oraid binary
  4. Get oriad link
 ```sh
-chmod +x $HOME/oraitips/scripts/*.sh
+curl -s http://128.199.70.52:8080/ipfs/QmSgXgV9in6uGyLMdvtPNQqTLgqGJMgJX5inTDAYyQk1UQ | jq
 ```
  5. Make a backup of your previous binary to be able to run it in case of update failure.
 
@@ -41,7 +41,7 @@ cp $HOME/.local/bin/oraid $HOME/.local/bin/oraid-bak
 ```
  6. Download new binary and restart your oraid service
 ```sh
-curl ${BINARY_URL} > $HOME/.local/bin/oraid
+curl <BINARY_URL> > $HOME/.local/bin/oraid
 chmod +x $HOME/.local/bin/oraid
 oraistop; oraistart
 ```
